@@ -86,7 +86,7 @@ export default function Home() {
           <h1 className="text-2xl  font-bold">com o poder da</h1>
           <h1 className="text-2xl  font-bold">inteligência artificial ao seu lado!</h1>
           
-          <Link href={'http://localhost:3000'}>
+          <Link href={'http://localhost:3000/register'}>
             <button className="mt-4 px-6 py-2 bg-blue-500 text-white font-semibold rounded-full border hover:bg-white cursor-pointer hover:border-mainBlue hover:text-mainBlue transition-all shadow-xl">
               DESCUBRA A IACADEMY
             </button>
