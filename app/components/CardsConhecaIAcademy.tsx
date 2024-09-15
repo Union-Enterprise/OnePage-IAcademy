@@ -6,7 +6,7 @@ interface CardsConhecaIAcademyProps {
 
 export function CardsConhecaIAcademy({ cards }: CardsConhecaIAcademyProps) {
   return (
-    <div className="grid grid-cols-2 gap-4 justify-evenly">
+    <div className="grid grid-cols-2 gap-4 justify-evenly pt-20">
       {cards.map(({ text, icon: Icon }, index) => (
         <div
           key={index}

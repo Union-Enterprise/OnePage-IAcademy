@@ -70,9 +70,8 @@ export function CardsContent(){
               </div>
               <h3 className="text-xl font-semibold text-green-500 mt-8">Auxílio</h3>
               <p className="text-sm text-gray-600 text-center">Apoio</p>
+            </div>          
             </div>
-            <p className="text-zinc-600 hover:text-mainBlue cursor-pointer">Explore nosso site</p>
-          </div>
         </div>
       </div>
     );

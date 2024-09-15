@@ -8,7 +8,7 @@ export default function FormInputGroup({
 }) {
   return (
     <div
-      className="flex relative items-center"
+      className="flex relative items-center pb-5"
     >
       {isTextArea ? (
         <textarea

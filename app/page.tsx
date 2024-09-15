@@ -12,6 +12,9 @@ import Button from "./components/Button";
 import { motion } from "framer-motion";
 import Footer from "./components/Footer";
 import Link from "next/link";
+import IconGroup from "./components/IconGroup";
+import MenuNav from "./components/MenuNav";
+import SvgGroup from "./components/SvgGroup";
 
 export default function Home() {
   const cardsData = [
@@ -24,54 +27,16 @@ export default function Home() {
   return (
     <>
 
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1024 576"
-        width="100%"
-        height="140%"
-        preserveAspectRatio="xMidYMid meet"
-      >
-        <path
-          fill="#1f5ccd"
-          d="M1024 327.27C657.02 543.67 308.71 224.15 197.15 139.59 85.59 55.02 0 26.35 0 26.35V-36.72H1024V327.27Z"
-        />
-        <path
-          fill="#617eea"
-          d="M666.31-36.72c0 177.08-243.8 205.79-394.38 205.79S0.08 414.67 0.08 437.97V-36.72H666.31Z"
-        />
-        <path
-          fill="#1865f2"
-          d="M1024 222.23C867.56 38.43 735.77 262.08 558.89 277.68 382.05 293.28 0.08 76.56 0.08 76.56V-36.72H1024V222.23Z"
-        />
-        <path
-          fill="#1865f2"
-          d="M806.13-36.72s64.54 146.98-53.77 237.34C634.04 290.95 320.34 68.65 209.19 74.06 98.04 79.43 0.08 222.23 0.08 222.23V-36.72H806.13Z"
-        />
-      </svg>
-
-
+      <SvgGroup/>
       <div className="absolute top-0 left-0 right-0 z-10 mt-5 ml-2 ">
         <img src="/whiteIcon.svg" alt="" width={80} height={80} className="hover:fill-mainBlue " />
       </div>
-
-
-      <div className="absolute top-0 left-0 right-0 z-10 mt-5 text-white flex justify-end p-4 gap-2  ">
-        <Globe className="w-7 h-7 mt-1 hover:fill-mainBlue " />
-        <div className="bg-white text-mainBlue flex gap-3 w-32 h-10 justify-center items-center rounded-xl ">
-          <CircleUserRound className="w-7 h-7 hover:fill-mainBlue" />
-          <Moon className="w-7 h-7 fill-mainBlue " />
+      <div className="absolute top-0 left-0 right-0 z-10 mt-4 text-white flex flex-col items-end p-4">
+        <div className="grid grid-cols-2 items-center justify-end w-full">
+          <MenuNav/>
+          <IconGroup/>
         </div>
       </div>
-
-
-      <div className="absolute top-0 left-0 right-0 z-10 mt-6 text-white flex justify-end p-4 gap-36 mr-52">
-        <h1 className="text-xl hover:border-b-white cursor-pointer ">Início</h1>
-        <h1 className="text-xl hover:border-b-white cursor-pointer ">Trilhas</h1>
-        <h1 className="text-xl hover:border-b-white cursor-pointer ">Planos</h1>
-        <h1 className="text-xl hover:border-b-white cursor-pointer ">Sobre</h1>
-      </div>
-
-
       <div className="absolute -top-0  -left-0 ml-52 mt-[400px]  pb-48 z-20">
         <div className="flex items-center mb-4">
           <img src="/blueLogo.svg" alt="Logo" className="w-40 lg:w-80" />
@@ -85,7 +50,6 @@ export default function Home() {
           </h1>
           <h1 className="text-2xl  font-bold">com o poder da</h1>
           <h1 className="text-2xl  font-bold">inteligência artificial ao seu lado!</h1>
-          
           <Link href={'http://localhost:3000/register'}>
             <button className="mt-4 px-6 py-2 bg-blue-500 text-white font-semibold rounded-full border hover:bg-white cursor-pointer hover:border-mainBlue hover:text-mainBlue transition-all shadow-xl">
               DESCUBRA A IACADEMY
@@ -137,7 +101,7 @@ export default function Home() {
               <FormInputGroup label="Nome" />
               <FormInputGroup label="Sobrenome" delayTime={2.5} />
             </div>
-            <FormInputGroup label="E-mail da empresa" delayTime={3} />
+            <FormInputGroup label="E-mail " delayTime={3} />
             <FormInputGroup label="Assunto" delayTime={3.5} />
             <FormInputGroup label="Mensagem" isTextArea={true} delayTime={4} />
             <Button text="Enviar Mensagem"/>
