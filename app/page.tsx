@@ -15,6 +15,8 @@ import Link from "next/link";
 import IconGroup from "./components/IconGroup";
 import MenuNav from "./components/MenuNav";
 import SvgGroup from "./components/SvgGroup";
+import React, { useEffect, useState } from 'react';
+import NavBar from "./components/NavBar";
 
 export default function Home() {
   const cardsData = [
@@ -24,19 +26,13 @@ export default function Home() {
     { text: "Segurança", icon: ShieldCheck },
   ];
 
+  
+
   return (
     <>
 
       <SvgGroup/>
-      <div className="absolute top-0 left-0 right-0 z-10 mt-5 ml-2 ">
-        <img src="/whiteIcon.svg" alt="" width={80} height={80} className="hover:fill-mainBlue " />
-      </div>
-      <div className="absolute top-0 left-0 right-0 z-10 mt-4 text-white flex flex-col items-end p-4">
-        <div className="grid grid-cols-2 items-center justify-end w-full">
-          <MenuNav/>
-          <IconGroup/>
-        </div>
-      </div>
+     <NavBar/>
       <div className="absolute -top-0  -left-0 ml-52 mt-[400px]  pb-48 z-20">
         <div className="flex items-center mb-4">
           <img src="/blueLogo.svg" alt="Logo" className="w-40 lg:w-80" />
@@ -80,7 +76,10 @@ export default function Home() {
 
 
       <CardsContent />
-      <CardsEstudent />
+      <div id="trilhas">
+        <CardsEstudent />
+      </div>
+
       <CardsInfo />
       <ContentVideo />
       <CardsThemes />

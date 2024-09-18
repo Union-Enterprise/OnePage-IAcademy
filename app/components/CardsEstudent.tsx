@@ -27,7 +27,7 @@ export function CardsEstudent(){
             </svg>
 
         </div>
-            <div className="relative z-30 grid grid-cols-3 gap-8  px-10 ml-52">
+            <div className="relative z-30 grid grid-cols-3 gap-20  px-24 ">
                 <div className="bg-white border shadow-lg rounded-lg p-6 grid grid-flow-row w-80 h-96 items-center ">
                     <div className="flex justify-center">
                         <HeartHandshakeIcon className="text-mainBlue w-32 h-32  " />

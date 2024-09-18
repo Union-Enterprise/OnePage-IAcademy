@@ -2,7 +2,7 @@ import { CircleChevronDown } from "lucide-react";
 
 export function CardsInfo(){
     return(
-    <div className="relative z-30 grid grid-cols-3 gap-14 px-20  mt-96 ml-20 ">
+    <div className="relative z-30 grid grid-cols-3 gap-10 px-6 pt-80  ">
         <div className="bg-white border shadow-lg rounded-lg p-6 grid grid-flow-row w-80 h-72 items-center ">
           <div>
             <CircleChevronDown className="text-mainBlue w-20 h-10"/>
@@ -19,7 +19,7 @@ export function CardsInfo(){
             <p className="absolute bottom-4 left-4 text-white text-xl font-semibold">Enem 2024</p>
           </div>
       </div>
-          <div className="bg-white border shadow-lg rounded-lg p-6 grid grid-flow-row w-[470px] h-64  ">
+          <div className="bg-white border shadow-lg rounded-lg p-6 grid grid-flow-row w-[400px] h-64  ">
             <div>
                 <h1 className="text-2xl text-green-400">
                 Conteúdo Personalizado
