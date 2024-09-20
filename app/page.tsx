@@ -18,6 +18,7 @@ import SvgGroup from "./components/SvgGroup";
 import React, { useEffect, useState } from 'react';
 import NavBar from "./components/NavBar";
 
+
 export default function Home() {
   const cardsData = [
     { text: "Atualizações", icon: CalendarDays },
@@ -25,14 +26,12 @@ export default function Home() {
     { text: "Comunidade", icon: Users },
     { text: "Segurança", icon: ShieldCheck },
   ];
-
-  
-
   return (
     <>
 
       <SvgGroup/>
-     <NavBar/>
+      <NavBar/>
+
       <div className="absolute -top-0  -left-0 ml-52 mt-[400px]  pb-48 z-20">
         <div className="flex items-center mb-4">
           <img src="/blueLogo.svg" alt="Logo" className="w-40 lg:w-80" />
@@ -54,7 +53,6 @@ export default function Home() {
         </div>
       </div>
 
-
       <div className="flex flex-col md:flex-row justify-around items-center gap-10 ml-10 ">
         <div className="w-full ">
           <h2 className="text-3xl font-bold text-mainBlue mb-4">Conheça a Iacademy</h2>
@@ -74,15 +72,22 @@ export default function Home() {
         <CardsConhecaIAcademy cards={cardsData} />
       </div>
 
-
-      <CardsContent />
       <div id="trilhas">
+      <CardsContent />
+      </div>
+    
+      <div id="planos">
         <CardsEstudent />
       </div>
 
-      <CardsInfo />
+      <div id="info">
+        <CardsInfo />
+      </div>
+      
       <ContentVideo />
-      <CardsThemes />
+      <div id="themes">
+        <CardsThemes />
+      </div>
 
       <section className="bg-gradient-radial bg-white px-32 md:px-20  py-20 mt-20 ">
         <div className="flex flex-col lg:flex-row gap-10">
