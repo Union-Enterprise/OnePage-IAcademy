@@ -32,20 +32,21 @@ export function CardsContent(){
             className="w-48 h-48 transition-transform duration-300 transform hover:scale-110"
           />
         </div>
-        <h3 className="text-xl font-semibold text-mainBlue mt-8">Conteúdo</h3>
-        <p className="text-sm text-gray-600 text-center">IA</p>
+        <h3 className="text-xl font-semibold text-mainBlue mt-20 pb-2">IA</h3>
+        <p className="text-sm text-gray-600 text-center ">Explore materiais exclusivos de IA para ampliar seu conhecimento e dominar habilidades do futuro.</p>
        </div>
             <div className="flex flex-col items-center justify-center w-60 h-60 p-6 bg-white border shadow-lg rounded-lg hover:border-red-500 transform transition-transform duration-300 hover:scale-105 relative overflow-visible">
               <div className="absolute -top-28 bg-red-500 text-white w-40 h-52 p-4">
-              <img
-                src="/trilhasia.svg"
-                alt=""
-                
-                className="w-96 h-36 transition-transform duration-300 transform hover:scale-110"
-              />
-              </div>
-              <h3 className="text-xl font-semibold text-red-500 mt-8">Trilhas</h3>
-              <p className="text-sm text-gray-600 text-center">Entretenimento</p>
+                <img
+                  src="/trilhasia.svg"
+                  alt=""
+                  
+                  className="w-96 h-36 transition-transform duration-300 transform hover:scale-110"
+                />
+                </div>
+                <h3 className="text-xl font-semibold text-red-500 mt-20 pb-2 ">Trilhas</h3>
+                <p className="text-sm text-gray-600 text-center ">Caminhe por trilhas interativas que levam você por temas variados de entretenimento.
+                </p>
             </div>
             <div className="flex flex-col items-center justify-center w-60 h-60 p-6 bg-white border shadow-lg rounded-lg hover:border-yellow-500 transform transition-transform duration-300 hover:scale-105 relative overflow-visible">
               <div className="absolute -top-28 bg-yellow-500 text-white  w-40 h-52 p-4">
@@ -56,8 +57,9 @@ export function CardsContent(){
                 className="w-96 h-36 transition-transform duration-300 transform hover:scale-110"
               />
               </div>
-              <h3 className="text-xl font-semibold text-yellow-500 mt-8">Quizzes</h3>
-              <p className="text-sm text-gray-600 text-center">Entretenimento</p>
+              <h3 className="text-xl font-semibold text-yellow-500 mt-20 pb-2">Quizzes</h3>
+              <p className="text-sm text-gray-600 text-center">Teste seu conhecimento com quizzes desafiadores e divertidos. Aprenda enquanto se diverte!
+              </p>
             </div>
             <div className="flex flex-col items-center justify-center w-60 h-60 p-6 bg-white border shadow-lg rounded-lg hover:border-green-500 transform transition-transform duration-300 hover:scale-105 relative overflow-visible">
               <div className="absolute -top-28 bg-green-500 text-white w-40 h-52 p-4">
@@ -68,8 +70,9 @@ export function CardsContent(){
                 className="w-96 h-36 transition-transform duration-300 transform hover:scale-110"
               />
               </div>
-              <h3 className="text-xl font-semibold text-green-500 mt-8">Auxílio</h3>
-              <p className="text-sm text-gray-600 text-center">Apoio</p>
+              <h3 className="text-xl font-semibold text-green-500 mt-20 pb-2">Auxílio</h3>
+              <p className="text-sm text-gray-600 text-center">Conte com ferramentas e suporte dedicados para facilitar sua jornada e maximizar seu potencial.
+              </p>
             </div>          
             </div>
         </div>

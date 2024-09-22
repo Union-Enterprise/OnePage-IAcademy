@@ -1,7 +1,7 @@
 "use client";
 
 import { Globe, Moon, CircleUserRound, CalendarDays, ShieldQuestion, Users, ShieldCheck, MoveRight } from "lucide-react";
-import { CardsConhecaIAcademy } from "./components/CardsConhecaIAcademy";
+import  CardsConhecaIAcademy  from "./components/CardsConhecaIAcademy";
 import { CardsContent } from "./components/CardsContent";
 import { CardsEstudent } from "./components/CardsEstudent";
 import { CardsInfo } from "./components/CardsInfo";
@@ -28,7 +28,7 @@ export default function Home() {
   ];
   return (
     <>
-
+      
       <SvgGroup/>
       <NavBar/>
 
@@ -53,7 +53,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row justify-around items-center gap-10 ml-10 ">
+      <div className="flex flex-col md:flex-row items-center  ml-10 ">
         <div className="w-full ">
           <h2 className="text-3xl font-bold text-mainBlue mb-4">Conheça a Iacademy</h2>
           <p className="text-lg  text-gray-700">
@@ -69,7 +69,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <CardsConhecaIAcademy cards={cardsData} />
+        <CardsConhecaIAcademy  />
       </div>
 
       <div id="trilhas">

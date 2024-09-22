@@ -11,7 +11,7 @@ import { CircleUserRound, Globe, Moon } from "lucide-react";
 const links = [
   [
     {
-      key: "services",
+      key: "Inicio",
       href: "#services",
       text: "Início",
     },
@@ -19,8 +19,10 @@ const links = [
     { key: "partners", href: "#trilhas", text: "Trilhas" },
   ],
   [
-    { key: "developers", href: "#planos", text: "Planos" },
-    { key: "enterprise", href: "info", text: "Sobre" },
+    { key: "plans", href: "#planos", text: "Planos" },
+    { key: "sobre", href: "#info", text: "Sobre" },
+    { key: "content", href: "#themes", text: "Conteudos" },
+    
   ],
 ];
 
@@ -38,12 +40,13 @@ export default function Header() {
   return (
     <>
       <header
-        className={`${
-          isScrolled
-            ? "bg-[rgba(0,0,0,0.64)] backdrop-blur-md"
-            : "bg-transparent opacity-100"
-        }  w-full flex gap-10 items-center px-[100px] h-[80px] fixed top-0 z-[999] text-lg `}
-      >
+               className={`${
+                isScrolled
+                  ? "bg-[rgba(71,102,163,0.4)] backdrop-saturate-[1.8] backdrop-blur-xl"
+                  : "*:text-black opacity-100"
+              }  w-full flex justify-between items-center px-[100px] h-[80px] fixed top-0 z-40 duration-100 text-lg`}
+            >
+      
         <div className="flex gap-10 items-center">
           <div className={`${"bg-[rgba(0,0,0,0.4)] "}`}></div>
           <Link
@@ -53,7 +56,7 @@ export default function Header() {
           >
           
            <div>
-            <img src="/whiteLogo.svg" alt="" width={200} height={200} />
+            <img src="/whiteIcon.svg" alt="" width={80} height={80} />
            </div>
           </Link>
           <div className="flex gap-10">
