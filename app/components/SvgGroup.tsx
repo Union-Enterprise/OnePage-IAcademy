@@ -23,6 +23,11 @@ const SvgGroup: React.FC = () => {
       <path
         fill="#1865f2"
         d="M806.13-36.72s64.54 146.98-53.77 237.34C634.04 290.95 320.34 68.65 209.19 74.06 98.04 79.43 0.08 222.23 0.08 222.23V-36.72H806.13Z" />
+           <foreignObject x="400" y="100" width="600" height="220"  >
+              <div className="flex flex-col items-center justify-center text-center">
+             <img src="/whiteIcon.svg" alt="" width={220} height={220} />
+              </div>
+            </foreignObject>
     </svg>
       <div className="flex justify-end">
         <svg
