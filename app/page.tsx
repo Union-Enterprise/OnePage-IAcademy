@@ -34,7 +34,7 @@ export default function Home() {
      
       <NavBar/>
 
-      <div className="absolute -top-0  -left-0 ml-52 mt-[400px]  pb-48 z-20">
+      <div className="absolute -top-0    ml-52 mt-[400px]  pb-48 z-20">
         <div className="flex items-center mb-4">
           <img src="/blueLogo.svg" alt="Logo" className="w-40 lg:w-80" />
         </div>
