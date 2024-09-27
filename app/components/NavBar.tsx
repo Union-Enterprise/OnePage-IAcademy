@@ -3,10 +3,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
-import Button from "./Button";
-import LogoIcon from "./LogoIcon";
-import IconGroup from "./IconGroup";
-import { CircleUserRound, Globe, Moon } from "lucide-react";
 
 const links = [
   [
@@ -51,10 +47,9 @@ export default function Header() {
         <Link
           key={"home"}
           href={"/"}
-          className="flex gap-5 group cursor-pointer hover:text-mainBlue transition-all"
+          className="flex gap-5 group cursor-pointer"
         >
           <div>
-            {/* Renderiza a imagem apenas quando isImageVisible é true */}
             {isImageVisible && (
               <img src="/whiteIcon.svg" alt="" width={50} height={50} className="hover:text-mainBlue" />
             )}
@@ -65,7 +60,9 @@ export default function Header() {
             <Link
               key={link.key}
               href={link.href}
-              className="text-white hover:text-mainBlue duration-100"
+              className={`text-white transition-all duration-100 ${
+                isScrolled ? "hover:text-mainBlue/75" : "hover:text-white/70"
+              }`}
             >
               <p>{link.text}</p>
             </Link>
@@ -76,7 +73,9 @@ export default function Header() {
             <Link
               key={link.key}
               href={link.href}
-              className="text-white hover:text-mainBlue duration-100"
+              className={`text-white transition-all duration-100 ${
+                isScrolled ? "hover:text-mainBlue/75" : "hover:text-white/70"
+              }`}
             >
               <p>{link.text}</p>
             </Link>
