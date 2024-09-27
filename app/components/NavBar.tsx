@@ -42,8 +42,8 @@ export default function Header() {
       <header
                className={`${
                 isScrolled
-                  ? "bg-[rgba(71,102,163,0.4)] backdrop-saturate-[1.8] backdrop-blur-xl"
-                  : "*:text-black opacity-100"
+                  ? "bg-[rgba(0,0,0,0.4)] backdrop-saturate-[1.8] backdrop-blur-xl"
+                  : "*:text-mainBlue opacity-100"
               }  w-full flex justify-between items-center px-[100px] h-[80px] fixed top-0 z-40 duration-100 text-lg`}
             >
       
@@ -56,7 +56,7 @@ export default function Header() {
           >
           
            <div>
-            <img src="/whiteIcon.svg" alt="" width={80} height={80} />
+            <img src="/whiteIcon.svg" alt="" width={50} height={50} className="hover:text-mainBlue" />
            </div>
           </Link>
           <div className="flex gap-10">
@@ -64,7 +64,7 @@ export default function Header() {
               <Link
                 key={link.key}
                 href={link.href}
-                className="text-white hover:text-main-purple duration-100"
+                className="text-white hover:text-mainBlue duration-100"
               >
                 <p>{link.text}</p>
               </Link>
@@ -75,7 +75,7 @@ export default function Header() {
             <Link
               key={link.key}
               href={link.href}
-              className="text-white hover:text-main-purple duration-100"
+              className="text-white hover:text-mainBlue duration-100"
             >
               <p>{link.text}</p>
             </Link>

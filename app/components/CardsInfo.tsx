@@ -2,7 +2,7 @@ import { CircleChevronDown } from "lucide-react";
 
 export function CardsInfo(){
     return(
-    <div className="relative z-30 grid grid-cols-3 gap-10 px-6 pt-80  ">
+    <div className="relative z-30 grid grid-cols-3 gap-10 px-2 jus pt-80  ">
         <div className="bg-white border shadow-lg rounded-lg p-6 grid grid-flow-row w-80 h-72 items-center ">
           <div>
             <CircleChevronDown className="text-mainBlue w-20 h-10"/>

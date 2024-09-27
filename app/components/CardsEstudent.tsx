@@ -4,7 +4,7 @@ import { BadgeCheck, Barcode, ChartNoAxesCombined, CreditCard, HeartHandshakeIco
 
 export function CardsEstudent(){
     return(
-        <><div className="relative ">
+        <><div className="relative mt-48 ">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="2200"
@@ -27,7 +27,7 @@ export function CardsEstudent(){
             </svg>
 
         </div>
-            <div className="relative z-30 grid grid-cols-3 gap-20  px-24 ">
+            <div className="relative z-30 grid grid-cols-3 gap-20  px-52 py-10 ">
                 <div className="bg-white border shadow-lg rounded-lg p-6 grid grid-flow-row w-80 h-96 items-center ">
                     <div className="flex justify-center">
                         <HeartHandshakeIcon className="text-mainBlue w-32 h-32  " />
@@ -66,7 +66,7 @@ export function CardsEstudent(){
                 <div className="bg-zinc-100 border shadow-lg rounded-lg p-6 w-80 flex flex-col items-center justify-between">
                     <div className="flex items-center space-x-4">
                         <BadgeCheck className="text-green-600 w-10 h-10" />
-                        <h3 className="text-xl font-bold text-mainBlue">Vantagens de usar a iAcademy</h3>
+                        <h3 className="text-xl font-bold text-mainBlue">Vantagens de usar a IAcademy</h3>
                     </div>
                     <p className="text-mainBlue text-center ">
                         o primeiro site educacional com IA. Assistência 24H via IA.

@@ -37,7 +37,7 @@ const cardData = [
 
 export default function CarouselDemo() {
   return (
-    <Carousel className="w-full max-w-xs mr-32">
+    <Carousel className="w-full max-w-xs mr-32 -mt-16">
       <CarouselContent>
         {cardData.map((card, index) => (
           <CarouselItem key={index}>

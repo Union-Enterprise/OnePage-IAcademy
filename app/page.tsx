@@ -53,9 +53,9 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row items-center  ml-10 ">
-        <div className="w-full ">
-          <h2 className="text-3xl font-bold text-mainBlue mb-4">Conheça a Iacademy</h2>
+      <div className="flex flex-col md:flex-row items-center  ml-10 px-12 ">
+        <div className="w-full  ">
+          <h2 className="text-3xl font-bold text-mainBlue mb-4">Conheça a IAcademy</h2>
           <p className="text-lg  text-gray-700">
             Fundada em 2024, a Iacademy surge com a   de alta qualidade e personalizada.
           </p>

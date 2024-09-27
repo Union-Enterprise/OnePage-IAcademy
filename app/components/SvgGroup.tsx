@@ -34,7 +34,7 @@ const SvgGroup: React.FC = () => {
           preserveAspectRatio="xMidYMid meet"
         >
           <circle cx="221.78" cy="41.69" r="131.78" fill="#1865f2" />
-          <circle cx="31.78" cy="11.07" r="21.07" fill="#00e88f" />
+        
         </svg>
       </div></>
 
