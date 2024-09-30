@@ -1,4 +1,4 @@
-import { svg } from "framer-motion/client";
+import React from 'react';
 
 export function CardsContent() {
   return (
@@ -26,58 +26,62 @@ export function CardsContent() {
         />
 
         <foreignObject x="200" y="180" width="600" height="200">
-          <div className="flex flex-col items-center justify-center text-center ">
+          <div className="flex flex-col items-center justify-center text-center">
             <h2 className="text-3xl font-bold text-white">Recursos oferecidos</h2>
             <p className="text-lg text-white mt-4">
               Oferecemos materiais didáticos atualizados e personalizados para garantir uma experiência de aprendizado eficaz e envolvente.
             </p>
             <button className="mt-4 px-6 py-2 bg-white text-mainBlue font-semibold rounded-full hover:bg-mainBlue hover:text-white transition-all shadow-xl">
               Saber mais
-            </button> 
+            </button>
           </div>
         </foreignObject>
       </svg>
 
-      <div className="flex justify-center mt-12 px-20">
+      <div className="flex justify-center mt-32 px-20">
         <div className="grid grid-cols-4 gap-32">
           {[
             {
               title: "IA",
               description: "Explore materiais exclusivos de IA para ampliar seu conhecimento e dominar habilidades do futuro.",
               imgSrc: "/conteudoia.svg",
-              color: "mainBlue",
+              color: "bg-mainBlue",
+              textColor: "text-mainBlue",
               hoverColor: "hover:border-mainBlue",
             },
             {
               title: "Trilhas",
               description: "Caminhe por trilhas interativas que levam você por temas variados de entretenimento.",
               imgSrc: "/trilhasia.svg",
-              color: "red-500",
+              color: "bg-red-500",
+              textColor: "text-red-500",
               hoverColor: "hover:border-red-500",
             },
             {
               title: "Quizzes",
               description: "Teste seu conhecimento com quizzes desafiadores e divertidos. Aprenda enquanto se diverte!",
               imgSrc: "/quizia.svg",
-              color: "yellow-500",
+              color: "bg-yellow-500",
+              textColor: "text-yellow-500",
               hoverColor: "hover:border-yellow-500",
             },
             {
               title: "Auxílio",
               description: "Conte com ferramentas e suporte dedicados para facilitar sua jornada e maximizar seu potencial.",
               imgSrc: "/auxilioia.svg",
-              color: "green-500",
+              color: "bg-green-500",
+              textColor: "text-green-500",
               hoverColor: "hover:border-green-500",
             },
-          ].map(({ title, description, imgSrc, color, hoverColor }, index) => (
+          ].map(({ title, description, imgSrc, color, textColor, hoverColor }, index) => (
             <div
               key={index}
               className={`flex flex-col items-center justify-center w-60 h-60 p-6 bg-white border shadow-lg rounded-lg ${hoverColor} transform transition-transform duration-300 hover:scale-105 relative overflow-visible`}
             >
-              <div className={`absolute -top-28 bg-${color} text-white w-40 h-52 p-4 flex items-center justify-center`}>
+              <div className={`absolute -top-28 ${color} text-white w-40 h-52 p-4 flex items-center justify-center`}>
                 <img src={imgSrc} alt={title} className="w-96 h-36 transition-transform duration-300 transform hover:scale-110" />
               </div>
-              <h3 className={`text-xl font-semibold text-${color} mt-20 pb-2`}>{title}</h3>
+              <h3 className={`text-xl font-semibold ${textColor} mt-20 pb-2`}>{title}</h3>
               <p className="text-sm text-gray-600 text-center">{description}</p>
             </div>
           ))}
