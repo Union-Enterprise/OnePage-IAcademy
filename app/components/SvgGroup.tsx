@@ -7,7 +7,6 @@ const SvgGroup: React.FC = () => {
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1024 430"
         width="100%"
-      
         preserveAspectRatio="xMidYMid meet"
       >
         <path
@@ -27,7 +26,7 @@ const SvgGroup: React.FC = () => {
           d="M806.13-36.72s64.54 146.98-53.77 237.34C634.04 290.95 320.34 68.65 209.19 74.06 98.04 79.43 0.08 222.23 0.08 222.23V-36.72H806.13Z"
         />
 
-        <foreignObject x="580" y="1" width="600" height="900"  >
+        <foreignObject x="580" y="30" width="600" height="900"  >
             <img
               src="/mulherSorrindo.svg"
               alt="Mulher Sorrindo"

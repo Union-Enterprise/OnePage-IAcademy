@@ -2,10 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+*,
+*::before,
+*::after {
+  transition: 0.1s ease;
+  scroll-behavior: smooth;
+}
+
 body {
     overflow-x: hidden;
   }
 
+  
 @layer base {
   :root {
         --background: 0 0% 100%;
