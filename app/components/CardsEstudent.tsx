@@ -26,7 +26,7 @@ export function CardsEstudent() {
                 </svg>
             </div>
 
-            <div className="relative z-30 grid grid-cols-3 gap-20 px-10 py-10">
+            <div className="relative z-30 grid grid-cols-3 gap-32 px-10 py-14">
                 <div className="bg-white border shadow-lg rounded-lg p-6 w-80 h-96 flex flex-col items-center">
                     <HeartHandshakeIcon className="text-mainBlue w-32 h-32" />
                     <h3 className="text-xl font-bold text-mainBlue">Estratégias e Dicas</h3>

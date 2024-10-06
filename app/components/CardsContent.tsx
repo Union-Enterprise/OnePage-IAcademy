@@ -25,7 +25,7 @@ export function CardsContent() {
           transform="rotate(180, 520.9, 438.85) scale(1.6) translate(7, -130)"
         />
 
-        <foreignObject x="200" y="180" width="600" height="200">
+        <foreignObject x="160" y="180" width="600" height="200">
           <div className="flex flex-col items-center justify-center text-center">
             <h2 className="text-3xl font-bold text-white">Recursos oferecidos</h2>
             <p className="text-lg text-white mt-4">
@@ -45,15 +45,15 @@ export function CardsContent() {
               title: "IA",
               description: "Explore materiais exclusivos de IA para ampliar seu conhecimento e dominar habilidades do futuro.",
               imgSrc: "/conteudoia.svg",
-              color: "bg-mainBlue",
-              textColor: "text-mainBlue",
+              color: "bg-mainBlue rounded-xl ",
+              textColor: "text-mainBlue ",
               hoverColor: "hover:border-mainBlue",
             },
             {
               title: "Trilhas",
               description: "Caminhe por trilhas interativas que levam você por temas variados de entretenimento.",
               imgSrc: "/trilhasia.svg",
-              color: "bg-red-500",
+              color: "bg-red-500 rounded-xl",
               textColor: "text-red-500",
               hoverColor: "hover:border-red-500",
             },
@@ -61,7 +61,7 @@ export function CardsContent() {
               title: "Quizzes",
               description: "Teste seu conhecimento com quizzes desafiadores e divertidos. Aprenda enquanto se diverte!",
               imgSrc: "/quizia.svg",
-              color: "bg-yellow-500",
+              color: "bg-yellow-500 rounded-xl",
               textColor: "text-yellow-500",
               hoverColor: "hover:border-yellow-500",
             },
@@ -69,7 +69,7 @@ export function CardsContent() {
               title: "Auxílio",
               description: "Conte com ferramentas e suporte dedicados para facilitar sua jornada e maximizar seu potencial.",
               imgSrc: "/auxilioia.svg",
-              color: "bg-green-500",
+              color: "bg-green-500 rounded-xl",
               textColor: "text-green-500",
               hoverColor: "hover:border-green-500",
             },
