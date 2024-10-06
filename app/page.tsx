@@ -91,7 +91,7 @@ export default function Home() {
         <CardsThemes />
       </div>
 
-      <section className="bg-gradient-radial bg-white px-32 md:px-20  py-20 mt-20 ">
+      <section className="bg-gradient-radial bg-white px-32 md:px-20  py-20 mt-20 " id="faleconosco">
         <div className="flex flex-col lg:flex-row gap-10">
           <div className="flex flex-col gap-10 w-full lg:w-1/2">
             <h1 className="text-6xl  font-semibold leading-tight  ">
