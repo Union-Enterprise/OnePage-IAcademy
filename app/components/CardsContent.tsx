@@ -25,7 +25,7 @@ export function CardsContent() {
           transform="rotate(180, 520.9, 438.85) scale(1.6) translate(7, -130)"
         />
 
-        <foreignObject x="160" y="180" width="600" height="200">
+        <foreignObject x="200" y="180" width="600" height="200">
           <div className="flex flex-col items-center justify-center text-center">
             <h2 className="text-3xl font-bold text-white">Recursos oferecidos</h2>
             <p className="text-lg text-white mt-4">
