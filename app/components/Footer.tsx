@@ -1,47 +1,52 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import FooterSection from "./FooterSection";
 import LogoIcon from "./LogoIcon";
-import Button from "./Button";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#ffff] border-t-2 border-[#ffff] w-full px-[100px] py-[80px] ">
+    <footer className="bg-[#ffff] border-[#ffff] w-full px-[100px] py-[25px]">
       <div className="grid grid-cols-4 gap-10 2xl:mr-20">
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col ">
           <Link
             key={"home"}
             href={"/"}
-            className="flex gap-5 group cursor-pointer w-fit"
+            className="flex  group cursor-pointer w-fit"
           >
-            <LogoIcon />
+           
           </Link>
           <p className="text-md text-zinc-600">
             &copy; 2024 IAcademy, Inc. - Todos os direitos reservados.
           </p>
         </div>
+
         <FooterSection
-          title={"Recursos"}
+          title={"Sobre a IAcademy"}
           texts={[
-            "Documentação",
-            "Estudos de Caso",
-            "FAQ",
-            "Suporte ao Cliente",
+            "Quem Somos",
+            "Nossa História",
+            "Missão e Valores",
+            "Parceiros",
+            "Depoimentos"
           ]}
         />
         <FooterSection
-          title={"Sobre a IAcademy"}
-          texts={["Equipe", "História", "Missão e Valores", "Parceiros"]}
+          title={"Explorando a Inteligência Artificial"}
+          texts={[
+            "Cursos Oferecidos",
+            "Projetos Práticos",
+            "Comunidade",
+            "Eventos e Workshops"
+          ]}
         />
         <FooterSection
-          title={"Legalidade"}
+          title={"Políticas e Regulamentos"}
           texts={[
             "Conformidade Regulatória",
             "Cookies",
             "Privacidade",
-            "Termos de Serviço",
+            "Termos de Serviço"
           ]}
         />
       </div>

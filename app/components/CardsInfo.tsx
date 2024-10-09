@@ -2,9 +2,9 @@ import { CircleChevronDown } from "lucide-react";
 
 export function CardsInfo() {
   return (
-    <div className="relative z-30 px-10 pt-[430px]">
-      {/* Primeira fileira */}
-      <div className="grid grid-cols-3 px-32 mb-16"> {/* Reduzi o gap para aproximar os cards */}
+    <div className="relative z-30 px-10 pt-[300px]">
+    
+      <div className="grid grid-cols-3 px-32 mb-16"> 
         <div className="bg-white border shadow-lg rounded-lg p-6 grid grid-flow-row w-80 h-72 items-center">
           <div>
             <CircleChevronDown className="text-mainBlue w-20 h-10" />
@@ -34,8 +34,8 @@ export function CardsInfo() {
         </div>
       </div>
 
-      {/* Segunda fileira */}
-      <div className="grid grid-cols-3 gap-20 ml-20"> {/* Mova toda a segunda fileira um pouco para a direita */}
+
+      <div className="grid grid-cols-3 gap-20 ml-20">
         <div className="bg-white border shadow-lg rounded-lg grid grid-flow-row w-72 h-72">
           <div className="relative bg-white border shadow-lg rounded-lg overflow-hidden w-72 h-72">
             <img src="/Enem.svg" alt="" className="w-full h-full object-cover" />
