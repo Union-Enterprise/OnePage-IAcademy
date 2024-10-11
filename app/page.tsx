@@ -116,11 +116,15 @@ export default function Home() {
 
         <form className="flex flex-col gap-y-14 ml-10" onSubmit={sendEmail}>
           <div className="bg-white shadow-xl rounded-lg p-8 border border-gray-200">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="text-2xl font-bold text-gray-900 mb-10">
               Fale com a <span className="text-mainBlue">IAcademy</span>
             </h2>
-            <div className="gap-10 mb-6">
-              <FormInputGroup label="Nome completo" name="name" />
+            <div className="gap-10 mb-8">
+              <FormInputGroup label="Nome " name="name" />
+        
+            </div>
+            <div className="gap-10 mb-8">
+              <FormInputGroup label="Sobrenome" name="name" />
         
             </div>
             <FormInputGroup label="E-mail " name="email" />
