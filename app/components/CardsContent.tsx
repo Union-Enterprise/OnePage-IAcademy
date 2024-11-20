@@ -58,9 +58,9 @@ export function CardsContent() {
               hoverColor: "hover:border-red-500",
             },
             {
-              title: "Quizzes",
+              title: "Simulados",
               description: "Teste seu conhecimento com quizzes desafiadores e divertidos. Aprenda enquanto se diverte!",
-              imgSrc: "/quizia.svg",
+              imgSrc: "/simulados.png",
               color: "bg-yellow-500 rounded-xl",
               textColor: "text-yellow-500",
               hoverColor: "hover:border-yellow-500",
